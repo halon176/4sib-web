@@ -1,21 +1,30 @@
 {% extends "base.html" %}
+
+{% load static %}
 {% block title %}4SiB{% endblock title %}
 {% block content %}
 
 <div class="button-container">
-  <h2 class="title">4 Salti in Barella Homepage</h2>
+    <img src="{% static 'images/4sib.webp' %}" alt="4SiB Logo" class="logo">
 
-  <a href="https://www.instagram.com" class="button-link">
-    <button class="button">Instagram</button>
-  </a>
+    <h2 class="title">4 Salti in Barella Homepage</h2>
 
-  <a href="https://www.telegram.org" class="button-link">
-    <button class="button">Telegram</button>
-  </a>
+    <a href="https://t.me/quattrosaltiinbarella" class="button-link">
+        <button class="button">Gruppo Telegram</button>
+    </a>
 
-  <a href="https://www.facebook.com" class="button-link">
-    <button class="button">Facebook</button>
-  </a>
+
+    <a href="https://www.instagram.com/4saltiinbarella.official/" class="button-link">
+        <button class="button">Instagram</button>
+    </a>
+
+    <a href="https://www.facebook.com/4sib.official" class="button-link">
+        <button class="button">Facebook</button>
+    </a>
+
+    <a href="https://tiktok.com/@4saltiinbarella.official" class="button-link">
+        <button class="button">TikTok</button>
+    </a>
 </div>
 
 {% endblock content %}
