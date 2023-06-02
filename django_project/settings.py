@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # local
     'pages.apps.PagesConfig',
     # 3rd
+    'bootstrap5',
 
 ]
 

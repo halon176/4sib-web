@@ -12,16 +12,19 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 34px;
   font-family: "Arial", sans-serif;
   font-weight: bold;
 }
-.subtitle{
+
+.subtitle {
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 18px;
   font-family: "Arial", sans-serif;
 }
+
 .logo {
   display: block;
   margin-bottom: 10px;
@@ -63,3 +66,29 @@ body {
   height: 20px;
   margin-right: 5px;
 }
+
+
+
+ol {
+  list-style-type: decimal;
+  margin: 0;
+  color: #fff;
+  padding: 0;
+}
+
+
+li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  ol li {
+    list-style-type: decimal;
+  }
+}
+
+
+

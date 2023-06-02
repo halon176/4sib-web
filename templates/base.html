@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 {% load static %}
 
-
-
 <html lang="it">
 <head>
     <meta charset="utf-8">
     <title>{% block title %}4SiB{% endblock title %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <style>
+      body {
+        background-color: #212529;
+        color: #fff;
+      }
+    </style>
 </head>
-<body>
+<body class="dark">
+
 <main>
     {% block content %}
     {% endblock content %}

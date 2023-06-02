@@ -3,42 +3,36 @@
 {% load static %}
 
 {% block title %}4SiB{% endblock title %}
+
 {% block content %}
+<div class="button-container d-flex flex-column justify-content-center align-items-center vh-100">
+  <div class="col-md-1 px-0">
+    <img src="{% static 'images/4sib.webp' %}" alt="4SiB Logo" class="img-fluid">
+  </div>
+  <p class="display-3">4 Salti in Barella</p>
 
+  <p class="lead fs-5">Benvenuti sul sito della più bella community di soccoritori di tutto lo stivale! 🚑</p>
 
-<div class="button-container">
-    <img src="{% static 'images/4sib.webp' %}" alt="4SiB Logo" class="logo">
-
-    <p class="title">4 Salti in Barella</p>
-
-    <p class="subtitle">Benvenuti sul sito della più bella comunity di soccoritori di tutto lo stivale! 🚑</p>
-
-
-    <a href="https://t.me/quattrosaltiinbarella" class="button-link">
-        <button class="button">
-            <img src="{% static 'icons/telegram.png' %}" class="icon-img">  Gruppo Telegram
-        </button>
+  <div class="d-grid">
+    <a href="https://t.me/quattrosaltiinbarella" class="btn btn-primary btn-lg mb-3">
+      <i class="bi bi-telegram"></i> Gruppo Telegram
     </a>
 
-
-    <a href="https://www.instagram.com/4saltiinbarella.official" class="button-link">
-        <button class="button">
-            <img src="{% static 'icons/instagram.png' %}" class="icon-img">  Instagram
-        </button>
+    <a href="https://www.instagram.com/4saltiinbarella.official" class="btn btn-primary btn-lg mb-3">
+      <i class="bi bi-instagram"></i> Instagram
     </a>
 
-
-    <a href="https://www.facebook.com/4sib.official" class="button-link">
-        <button class="button">
-            <img src="{% static 'icons/facebook.png' %}" class="icon-img">  Facebook
-        </button>
+    <a href="https://www.facebook.com/4sib.official" class="btn btn-primary btn-lg mb-3">
+      <i class="bi bi-facebook"></i> Facebook
     </a>
 
-    <a href="https://tiktok.com/@4saltiinbarella.official" class="button-link">
-        <button class="button">
-            <img src="{% static 'icons/tiktok.png' %}" class="icon-img">  TikTok
-        </button>
+    <a href="https://tiktok.com/@4saltiinbarella.official" class="btn btn-primary btn-lg mb-3">
+      <i class="bi bi-tiktok"></i> TikTok
     </a>
+    <a href="{% url 'regole' %}" class="btn btn-primary btn-lg mb-3" >
+      Regole
+    </a>
+  </div>
 </div>
 
 {% endblock content %}
