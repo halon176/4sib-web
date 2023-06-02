@@ -1,5 +1,7 @@
 FROM python:3.11.3-bullseye
 
+LABEL org.opencontainers.image.source="https://github.com/halon176/4sib-web"
+
 ENV PIP_DISABLE_PIP_VERSION_CHECK 1
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
