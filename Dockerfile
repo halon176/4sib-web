@@ -10,3 +10,5 @@ COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY . .
+
+CMD gunicorn django_project.wsgi --bind 0.0.0.0:8000 --log-file -
