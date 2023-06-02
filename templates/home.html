@@ -5,6 +5,9 @@
 {% block title %}4SiB{% endblock title %}
 
 {% block content %}
+{% load bootstrap_icons %}
+
+
 <div class="button-container d-flex flex-column justify-content-center align-items-center vh-100">
   <div class="col-md-1 px-0">
     <img src="{% static 'images/4sib.webp' %}" alt="4SiB Logo" class="img-fluid">
@@ -15,22 +18,22 @@
 
   <div class="d-grid">
     <a href="https://t.me/quattrosaltiinbarella" class="btn btn-primary btn-lg mb-3">
-      <i class="bi bi-telegram"></i> Gruppo Telegram
+      {% bs_icon 'telegram' size='1.5rem' %} Gruppo Telegram
     </a>
 
     <a href="https://www.instagram.com/4saltiinbarella.official" class="btn btn-primary btn-lg mb-3">
-      <i class="bi bi-instagram"></i> Instagram
+            {% bs_icon 'instagram' size='1.5rem' %} Instagram
     </a>
 
     <a href="https://www.facebook.com/4sib.official" class="btn btn-primary btn-lg mb-3">
-      <i class="bi bi-facebook"></i> Facebook
+            {% bs_icon 'facebook' size='1.5rem' %} Facebook
     </a>
 
     <a href="https://tiktok.com/@4saltiinbarella.official" class="btn btn-primary btn-lg mb-3">
-      <i class="bi bi-tiktok"></i> TikTok
+            {% bs_icon 'tiktok' size='1.5rem' %}</span> TikTok
     </a>
-    <a href="{% url 'regole' %}" class="btn btn-primary btn-lg mb-3" >
-      Regole
+    <a href="{% url 'regole' %}" class="btn btn-primary btn-lg mb-3">
+      {% bs_icon 'book' size='1.5rem' %} Regole del Gruppo
     </a>
   </div>
 </div>

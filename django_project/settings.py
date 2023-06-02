@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     # 3rd
     'bootstrap5',
+    'django_bootstrap_icons'
 
 ]
 
