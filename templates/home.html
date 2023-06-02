@@ -1,29 +1,43 @@
 {% extends "base.html" %}
 
 {% load static %}
+
 {% block title %}4SiB{% endblock title %}
 {% block content %}
+
 
 <div class="button-container">
     <img src="{% static 'images/4sib.webp' %}" alt="4SiB Logo" class="logo">
 
-    <h2 class="title">4 Salti in Barella Homepage</h2>
+    <p class="title">4 Salti in Barella</p>
+
+    <p class="subtitle">Benvenuti sul sito della più bella comunity di soccoritori di tutto lo stivale! 🚑</p>
+
 
     <a href="https://t.me/quattrosaltiinbarella" class="button-link">
-        <button class="button">Gruppo Telegram</button>
+        <button class="button">
+            <img src="{% static 'icons/telegram.png' %}" class="icon-img">  Gruppo Telegram
+        </button>
     </a>
 
 
-    <a href="https://www.instagram.com/4saltiinbarella.official/" class="button-link">
-        <button class="button">Instagram</button>
+    <a href="https://www.instagram.com/4saltiinbarella.official" class="button-link">
+        <button class="button">
+            <img src="{% static 'icons/instagram.png' %}" class="icon-img">  Instagram
+        </button>
     </a>
+
 
     <a href="https://www.facebook.com/4sib.official" class="button-link">
-        <button class="button">Facebook</button>
+        <button class="button">
+            <img src="{% static 'icons/facebook.png' %}" class="icon-img">  Facebook
+        </button>
     </a>
 
     <a href="https://tiktok.com/@4saltiinbarella.official" class="button-link">
-        <button class="button">TikTok</button>
+        <button class="button">
+            <img src="{% static 'icons/tiktok.png' %}" class="icon-img">  TikTok
+        </button>
     </a>
 </div>
 
