@@ -20,8 +20,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_ACCESS_TOKEN }}
-      - name: Collect static
-        run: python manage.py collectstatic
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ghcr.io/halon176/4sib-web:latest
       - name: Publish the Docker image
