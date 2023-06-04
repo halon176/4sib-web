@@ -36,5 +36,4 @@ jobs:
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_POST: ${{ secrets.DB_POST }}
           MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
-        run: |
-        python manage.py test
+        run: python manage.py test
